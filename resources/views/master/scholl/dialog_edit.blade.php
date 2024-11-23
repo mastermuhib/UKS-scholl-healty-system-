@@ -147,7 +147,7 @@
 @section('js')
 @include('components/componen_crud')
 <!-- end -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvTkPKa1jErT_Kh9ZPTIP2az48f8y0WGo&libraries=places"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script>
 <script>
 function initialize() {
     $("#searchLock").attr("placeholder","");
