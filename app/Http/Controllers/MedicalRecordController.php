@@ -287,7 +287,7 @@ class MedicalRecordController extends Controller
                 //         $message = "Yth ".$v->student_parent_name.". anak Anda yang bernama ".$v->student_name." mengalamai keluhan ".$request->problem." dan kami sudah melakukan tindakan ".$request->solving.". Sekian terima kasih";
                 //         $send_wa = parent::ZenzifaWa($phone,$message);
                 //         //dd($send_wa);
-                //     }
+                //     //}
                 // }
 
                 $insert_log      = parent::LogAdmin(\Request::ip(),Auth::guard('admin')->user()->id,'Menambah Data medical '.$request->problem.'','medical record');
