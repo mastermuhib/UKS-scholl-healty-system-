@@ -73,7 +73,7 @@ trait Fungsi {
         return $env;
     }
     public static function AWS_SECRET_ACCESS_KEY(){
-        $env = 'gaL9XLtRZRHH1Q3TvDbledkOU9hld+fHcdP01lSg';
+        $env = '';
         return $env;
     }
     public static function AWS_ACCESS_KEY_ID(){
@@ -82,7 +82,7 @@ trait Fungsi {
     }
 
     public static function FIREBASE_CREDENTIAL(){
-        $env = 'AAAAV9EWQFc:APA91bFA7w9IiGzitiJlFVHBtgevQN7pd5K51zmMpvn3eFQFDNcFJJsm3x3V8z56fEEPns0kwA8zbCWw5jwj2qODSzFCiU9l7qlhOENE7lEuzAkcAuTan4gMETbgF4Gt1UFyI8aatr6p';
+        $env = '';
         return $env;
     }
     //
@@ -143,7 +143,7 @@ trait Fungsi {
                     );
                 
                 $headers = array (
-                    'Authorization: key=' . "AAAA8xZHI9g:APA91bHJGuoF7n9MuI3PF8KxU5LeFvzpFZ_j4T1mT-3yieqlw1V0vwFycrgH2yqTq3L-nSAacudeFlzyVj26QS0oHpJdbDVlmEp29p4fUydp7KJJdg0CFvP6hM1956u_1eAd7dmK1iYu",
+                    'Authorization: key=' . "",
                     'Content-Type: application/json'
                 );
 
@@ -196,7 +196,7 @@ trait Fungsi {
        
             
         $userkey="45o2qa"; // userkey lihat di zenziva
-        $passkey="461e85b874184290030aaa72";
+        $passkey="";
 
         $url = "https://gsm.zenziva.net/api/sendWA/";
         $curlHandle = curl_init();
@@ -315,7 +315,7 @@ trait Fungsi {
               "password" => $password
         ];
         $email->addDynamicTemplateDatas($substitutions);
-        $sendgrid = new \SendGrid('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');
+        $sendgrid = new \SendGrid('');
         try {
             $response = $sendgrid->send($email);
             $data['status'] = $response->statusCode() . "\n";
