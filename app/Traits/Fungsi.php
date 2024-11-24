@@ -77,7 +77,7 @@ trait Fungsi {
         return $env;
     }
     public static function AWS_ACCESS_KEY_ID(){
-        $env = '3fe44de7af6171ce0fca';
+        $env = '';
         return $env;
     }
 
@@ -108,7 +108,7 @@ trait Fungsi {
                     );
                 
                 $headers = array (
-                    'Authorization: key=' . "AAAA8xZHI9g:APA91bHJGuoF7n9MuI3PF8KxU5LeFvzpFZ_j4T1mT-3yieqlw1V0vwFycrgH2yqTq3L-nSAacudeFlzyVj26QS0oHpJdbDVlmEp29p4fUydp7KJJdg0CFvP6hM1956u_1eAd7dmK1iYu",
+                    'Authorization: key=' . "",
                     'Content-Type: application/json'
                 );
 
@@ -169,7 +169,7 @@ trait Fungsi {
        
             
         $userkey="45o2qa"; // userkey lihat di zenziva
-        $passkey="461e85b874184290030aaa72";
+        $passkey="";
 
         $url = "https://gsm.zenziva.net/api/sendsms/";
         $curlHandle = curl_init();
@@ -219,7 +219,7 @@ trait Fungsi {
 
     public static function BlastWA($message,$phone) {
         $apiURL = "https://api.chat-api.com/instance295279/";
-        $token = "b0dwlx0crblrzyx2";
+        $token = "";
         $data = json_encode(
             array(
                 'chatId'=>$phone.'@c.us',
@@ -247,7 +247,7 @@ trait Fungsi {
 
     public static function BlastWA_two($message,$phone) {
         $apiURL = "https://api.chat-api.com/instance295186/";
-        $token = "00po9558m4j9gr5n";
+        $token = "";
         $data = json_encode(
             array(
                 'chatId'=>$phone.'@c.us',
@@ -275,7 +275,7 @@ trait Fungsi {
 
     public static function BlastWA_tiga($message,$phone) {
         $apiURL = "https://api.chat-api.com/instance295273/";
-        $token = "y4mo5fi883w7g5mm";
+        $token = "";
         $data = json_encode(
             array(
                 'chatId'=>$phone.'@c.us',
@@ -306,7 +306,7 @@ trait Fungsi {
         $email->setFrom("iluniftuidev@gmail.com", "Alumni FT UI");
         $email->setSubject("Pemberitahuan");
         $email->addTo($email_x, $name);
-        $email->setTemplateId('d-c65aa996a1e6496f9300df808336cd0c');
+        $email->setTemplateId('');
         $id = base64_encode($email_x);
         $link = "";
 
