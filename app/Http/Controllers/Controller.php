@@ -287,7 +287,7 @@ class Controller extends BaseController
 
         $substitutions = $substitute;
         $email->addDynamicTemplateDatas($substitutions);
-        $sendgrid = new \SendGrid('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');
+        $sendgrid = new \SendGrid('');
         try {
             $response = $sendgrid->send($email);
 
